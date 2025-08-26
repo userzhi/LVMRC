@@ -11,3 +11,4 @@ The pipeline of detection process:
 2. Create Metric Learning-Based Prototype Region Classifier
 3. Training Self-Supervised Features-Based Logits Region Classifier
 4. Detect objects via RPN and two Region Classifiers 
+# Self-Supervised Features-Based Logits Region Classifier（SPLRC）
