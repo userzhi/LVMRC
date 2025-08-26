@@ -31,4 +31,3 @@ pip install torch==1.13.0+cu116 \
             --extra-index-url https://download.pytorch.org/whl/cu116
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 pip install opencv-python albumentations transformers
-</div>
