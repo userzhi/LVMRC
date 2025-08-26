@@ -5,8 +5,8 @@
 <p align="center">
   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/14b97009-3dce-4c39-9677-8da2604571ae" />
 </p>
-The pipline of detection process:
-1、Prepare the data with N labelled examples per categoy
-2. Create Metric Learning-Based Prototype Region Classifier
-3. Training Self-Supervised Fearures-Based Logits Region Classifier
-4. Detect objects via RPN and two Region Classifiers
+The pipline of detection process:  
+1、Prepare the data with N labelled examples per categoy  
+2. Create Metric Learning-Based Prototype Region Classifier  
+3. Training Self-Supervised Features-Based Logits Region Classifier  
+4. Detect objects via RPN and two Region Classifiers  
