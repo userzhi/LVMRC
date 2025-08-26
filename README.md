@@ -83,5 +83,13 @@ data/
 </pre>
 </div>
 
-# Evalute
+# Evaluate
 Evaluate LVMRC on unseen data:
+
+<div style="max-height: 400px; overflow: auto; border: 1px solid #ddd; padding: 10px;">
+
+<pre>
+<code>
+bash scripts/eval_detection_by_region_classifier.sh
+</code>
+</pre>
