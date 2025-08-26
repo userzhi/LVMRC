@@ -5,7 +5,8 @@
 # Results
 ## Results
 
-| Dataset | Method | mAP (5-shot) | mAP (10-shot) | mAP (30-shot) |
+| Methods | Backbone |    5-shot    |    10-shot    |     30-shot    |
+                       -----------     -----------      -----------
 |---------|--------|--------------|---------------|---------------|
 | SIMD    | Method A | 45.2        | 52.7          | 63.4          |
 | SIMD    | Method B | 47.8        | 54.1          | 65.0          |
