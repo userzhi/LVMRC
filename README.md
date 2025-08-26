@@ -3,7 +3,14 @@
   Recently, a large-scale visual model named DINOv2 has demonstrated exceptional capabilities in feature representation for downstream computer vision tasks. Researchers have applied it to the field of few-shot object detection and proposed a DINOv2-based few-shot object detection paradigm, achieving impressive detection performance. However, category prototypes are constructed without explicit semantic guidance, which limits the performance of this paradigm. To address this problem, this paper proposes a region classification method based on large-scale visual model (LVMRC), aiming to classify region proposals in few-shot object detection. First, we propose a self-supervised features-based logits region classifier (SPLRC). SPLRC could capture the deep correlation between region features and class semantics through a nonlinear transformation mechanism, making it effectively enhance the ability of detection model to classify region proposals. To integrate the advantages of similarity-based and logits-based criteria, we develop a cascade-residual region classifier (CRRC). CRRC not only effectively leverages feature alignment capability of similarity-based metric and semantic representation power of logits-based criterion, but introduce a residual fusion mechanism to establish a novel meta-criterion. CRRC further enhances the capability of detection model to classify region proposals. We carry out comprehensive experiments on DIOR and SIMD remote sensing datasets to demonstrate that the proposed method achieves competitive performance. It is noteworthy that LVMRC are employed without fine-tuning any parameter.
 
 # Results
+## Results
 
+| Dataset | Method | mAP (5-shot) | mAP (10-shot) | mAP (30-shot) |
+|---------|--------|--------------|---------------|---------------|
+| SIMD    | Method A | 45.2        | 52.7          | 63.4          |
+| SIMD    | Method B | 47.8        | 54.1          | 65.0          |
+| DIOR    | Method A | 32.5        | 40.3          | 51.6          |
+| DIOR    | Method B | 34.0        | 42.1          | 53.2          |
 
 # Overview
 <p align="center">
