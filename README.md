@@ -20,26 +20,12 @@ The pipeline of detection process:
 <div style="max-height: 400px; overflow: auto; border: 1px solid #ddd; padding: 10px;">
 
 ```bash
-# 1. 创建 Conda 环境
-conda create -n ovdsat python=3.9 -y
-
-# 2. 激活环境
-conda activate ovdsat
-
-# 3. 安装指定版本的 PyTorch（带 CUDA 11.6 支持）
+conda create -n LVMRC python=3.9 -y
+conda activate LVMRC
 pip install torch==1.13.0+cu116 \
             torchvision==0.14.0+cu116 \
             torchaudio==0.13.0 \
             --extra-index-url https://download.pytorch.org/whl/cu116
-
-# 4. 安装 Detectron2
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
-
-# 5. 安装其他依赖库
 pip install opencv-python albumentations transformers
-
-# 6. 验证 CUDA 是否可用（可选）
-import torch
-print(torch.cuda.is_available())
-print(torch.version.cuda)
 </div>
