@@ -12,4 +12,4 @@ The pipeline of detection process:
 3. Training Self-Supervised Features-Based Logits Region Classifier
 4. Detect objects via RPN and two Region Classifiers 
 # Self-Supervised Features-Based Logits Region Classifier（SPLRC）
-![Uploading logits.png…]()
+[![Uploading logits.png…]()](https://github.com/userzhi/LVMRC/blob/main/images/logits.png)
