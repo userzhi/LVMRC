@@ -15,7 +15,8 @@ The pipeline of detection process:
 <p align="center">
   <img src="https://github.com/userzhi/LVMRC/blob/main/images/logits.png?raw=true" width="600" />
 </p>
-
+# Requirements
+Create a conda environment and install the required packages as follows.
 
 <div style="max-height: 400px; overflow: auto; border: 1px solid #ddd; padding: 10px;">
 
