@@ -22,7 +22,8 @@ Create a Conda environment and install the required packages as follows:
 
 <div style="max-height: 400px; overflow: auto; border: 1px solid #ddd; padding: 10px;">
 
-```bash
+<pre>
+<code>
 conda create -n LVMRC python=3.9 -y
 conda activate LVMRC
 pip install torch==1.13.0+cu116 \
@@ -31,3 +32,41 @@ pip install torch==1.13.0+cu116 \
             --extra-index-url https://download.pytorch.org/whl/cu116
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 pip install opencv-python albumentations transformers
+</code>
+</pre>
+
+</div>
+
+# Data preparation
+We provide the same splits and labels we use in our article for the SIMD dataset (N = {5, 10, 30}). The data path should follow the structure below for each dataset, e.g. simd, dior or your own:
+<div style="max-height: 400px; overflow: auto; border: 1px solid #ddd; padding: 10px;">
+
+<pre>
+<code>
+data/
+│
+├── simd/
+│   ├── train_coco_subset_N5.json
+│   ├── train_coco_subset_N10.json
+│   ├── train_coco_subset_N30.json
+│   ├── train_coco_finetune_val.json
+│   ├── val_coco.json
+│   ├── train/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── val/
+│       ├── image1.jpg
+│       ├── image2.jpg
+│       └── ...
+│
+├── dior/
+│   ├── train_coco_subset_N5.json
+│   ├── train_coco_subset_N10.json
+│   ├── train_coco_subset_N30.json
+│   └── ...
+...
+</code>
+</pre>
+
+</div>
